@@ -3,5 +3,16 @@
 {% block content %}
 
 <h1>HOME...</h1>
+<br>
+{% i = 1 %}
+{% while i < 10: %}
+       HELLOO 
+	{% i += 1 %}
+
+
+AIR QUALITY: {{ api.0.AQI }}<br/>
+AREA: {{ api.0.ReportingArea }}<br/>
+CATEGORY: {{ api.0.Category.Name}}<br/>
+{{ api }}
 
 {% endblock %}
